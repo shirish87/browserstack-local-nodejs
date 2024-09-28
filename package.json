@@ -6,8 +6,8 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "pretest": "./node_modules/.bin/eslint lib/* index.js",
-    "test": "./node_modules/.bin/mocha"
+    "pretest": "eslint lib/* index.js",
+    "test": "mocha"
   },
   "keywords": [
     "BrowserStack",
