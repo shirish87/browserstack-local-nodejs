@@ -18,6 +18,9 @@ jobs:
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
         nodejs: [14, 16, 20]
+        exclude:
+          - os: macos-latest
+            nodejs: 14
 
     name: "node.js ${{ matrix.nodejs }} on ${{ matrix.os }}"
     runs-on: ${{ matrix.os }}
